@@ -3,7 +3,7 @@
 	Reuben Strangelove
 	Winter 2018	
 	
-	Rudolph sings a songs, get's sick, the barfs Christmas presents!
+	Rudolph sings a songs, get's sick, then barfs Christmas presents!
 		
 	MCU:
 		Arduino Nano		
@@ -17,8 +17,11 @@
 	Sound and melody playback provided by: https://www.arduino.cc/en/Tutorial/PlayMelody
 	
 	Hardware work around:
-	Some servos are powered on using a relay due to overcurrent condition, 
-	when attempting to provide power to all the servo's all at once.
+		Some servos are powered on using a relay due to overcurrent condition, 
+		when attempting to provide power to all the servo's all at once.
+		
+	Note:
+		A suggestion is to use Arduino's tone library, as it is none blocking.
 */
 
 // Single in degrees relative to hardware position, requires physical calibration.
